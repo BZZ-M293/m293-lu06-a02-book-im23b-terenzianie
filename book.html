@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
+<head>
     <meta charset="UTF-8">
     <title>LU06.A02 - Buch</title>
-  </head>
-  <body>
-
-  </body>
+</head>
+<body>
+<form action="https://it.bzz.ch/demo/formdata/index.php" method="post">
+    <label for="btitle">Buchtitel</label><br>
+    <input id="btitle" name="btitle" type="text" minlength="2" maxlength="30" required><br>
+    <label for="autor">Autoren</label><br>
+    <input id="autor" name="autor" type="text" minlength="5" maxlength="40"><br>
+    <label for="price">Preis</label><br>
+    <input id="price" name="price" type="number" min="0.05" max="99.95" step="any"><br>
+    <label for="date">Erscheinungsdatum</label><br>
+    <input id="date" name="date" type="date"><br>
+    <label for="version">Auflage</label><br>
+    <input id="version" name="version" type="number" min="1" max="9"><br>
+    <button type="reset">Zurücksetzten</button>
+    <button type="submit">Absenden</button>
+</form>
+</body>
 </html>
